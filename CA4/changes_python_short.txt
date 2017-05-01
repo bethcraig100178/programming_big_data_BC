@@ -1,0 +1,107 @@
+------------------------------------------------------------------------
+r1551925 | Thomas | 2015-11-27 16:57:44 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   A /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client/res/drawable-xxxhdpi (from /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client/res/drawablw-xxxhdpi:1551688)
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client/res/drawablw-xxxhdpi
+   A /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-bt/res/drawable-xxxhdpi (from /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-bt/res/drawablw-xxxhdpi:1551922)
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-bt/res/drawablw-xxxhdpi
+
+Renamed folder to the correct name
+------------------------------------------------------------------------
+r1551575 | Thomas | 2015-11-27 09:46:32 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/common/mvn-config/res/values/environment.xml
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/mct/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/mct/build-config/prod_lowbandwidth.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/mct/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/mct/build-config/qa_lowbandwidth.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/mct/build-config/voucher.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-amx/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-amx/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-amx/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-bt/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-bt/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-bt/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-frt/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-frt/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-spanishclaros/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-spanishclaros/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-spanishclaros/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-telcel/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-telcel/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-telcel/build-config/qa.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/libs/ui/res/values/configurations.xml
+
+Removed unused webview.plan.management and webview_plan_management properties
+------------------------------------------------------------------------
+r1551569 | Vincent | 2015-11-27 09:38:09 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/settings.gradle
+
+enable all clients
+------------------------------------------------------------------------
+r1551558 | Thomas | 2015-11-27 09:13:26 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/common/scripts/clients.gradle
+
+Chnaged jira url to htps
+------------------------------------------------------------------------
+r1551504 | /OU=Domain Control Validated/CN=svn.company.net | 2015-11-27 07:05:41 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/version.properties
+
+[gradle-release] prepare for next development iteration
+------------------------------------------------------------------------
+r1551486 | Vincent | 2015-11-27 06:10:10 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/settings.gradle
+
+SFR-108 : preparing release for SFR
+------------------------------------------------------------------------
+r1551485 | Vincent | 2015-11-27 06:06:30 +0000 (Fri, 27 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/values-fr/strings.xml
+
+SFR-108 : 1.buddy sync removed from settings. 2. italics text corrected.
+------------------------------------------------------------------------
+r1551375 | Vincent | 2015-11-26 15:01:51 +0000 (Thu, 26 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/values/strings.xml
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/values-fr/strings.xml
+
+SFR-108 : androidM related strings added.
+------------------------------------------------------------------------
+r1551347 | Vincent | 2015-11-26 14:35:32 +0000 (Thu, 26 Nov 2015) | 1 line
+Changed paths:
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/activity_settings.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/all_files_activity.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/fragment_help_layout.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/new_slides_main_screen.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/play_now_activity.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/restore_activity.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/setting_dataclasses_activity.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/tabs_view_pager.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/tools_activity.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/upload_download_status.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/view_pager.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout/wizard_activity.xml
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout-sw600dp
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout-sw600dp-land
+   D /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/res/layout-sw600dp-port
+
+SFR-108 : removed unnecessary layouts which were copy-pasted from amx. They were enabling help_footer
+------------------------------------------------------------------------
+r1551334 | Vincent | 2015-11-26 14:20:12 +0000 (Thu, 26 Nov 2015) | 1 line
+Changed paths:
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/build-config/dev.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/build-config/prod.properties
+   M /cloud/personal/client-international/android/branches/android-15.2-solutions/clients/client-sfr/build-config/qa.properties
+
+SFR-108 : using WL base & snc urls
+------------------------------------------------------------------------

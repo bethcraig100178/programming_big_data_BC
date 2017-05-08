@@ -90,30 +90,18 @@ class Mine_for_Commits(object): #create a class to store output from mining the 
             
     def amd_per_author(self):        
         #Statistic 2 Create dictionary to count number of A, M and D per authors
-        total = 0
-        totalA = 0
-        totalM = 0
-        totalD = 0
-        totalR = 0
-
         for i in range(len(self.commits)):
             for file in range(self.commits[i].numberfiles+1):
                 if self.commits[i].changes[file].split()[0] == 'A':
-                    totalA = totalA + 1
                     self.numberA[self.commits[i].author] = self.numberA.get(self.commits[i].author, 0) + 1
                 elif self.commits[i].changes[file].split()[0] == 'M':
-                    totalM = totalM + 1
                     self.numberM[self.commits[i].author] = self.numberM.get(self.commits[i].author, 0) + 1    
                 elif self.commits[i].changes[file].split()[0] == 'D':
-                    totalD = totalD + 1
                     self.numberD[self.commits[i].author] = self.numberD.get(self.commits[i].author, 0) + 1  
                 elif self.commits[i].changes[file].split()[0] == 'R':
-                    totalR = totalR + 1
                     self.numberR[self.commits[i].author] = self.numberR.get(self.commits[i].author, 0) + 1  
 
-        total = totalA + totalM+ totalD + totalR  #sanity check, should be equal to number of files         
-        print total, totalA, totalM, totalD, totalR
-        
+      
         
     def unique_days_commit(self):
         #Statistic 3 Count number of unique days at least one commit was made on
@@ -123,68 +111,39 @@ class Mine_for_Commits(object): #create a class to store output from mining the 
                 authordate.append((self.commits[i].author, self.commits[i].date.split()[0]))
                 self.days_atleastone_commit[self.commits[i].author] = self.days_atleastone_commit.get(self.commits[i].author, 0) + 1 
        
+       
     def dayOfTheWeek_per_author(self):
         #Statistic 4 Count number of commits by author and day of the week
-        totalByDay = 0
-        totalMon = 0
-        totalTue = 0
-        totalWed = 0
-        totalThu = 0
-        totalFri = 0
         # iterate through commits to find Mon, Tue etc
         for i in range(len(self.commits)):
             if self.commits[i].dayOfTheWeek == 'Mon':
-                totalMon = totalMon + 1
-                self.Mon[self.commits[i].author] = self.Mon.get(self.commits[i].author, 0) + 1 
+               self.Mon[self.commits[i].author] = self.Mon.get(self.commits[i].author, 0) + 1 
             elif self.commits[i].dayOfTheWeek == 'Tue':
-                totalTue = totalTue + 1
-                self.Tue[self.commits[i].author] = self.Tue.get(self.commits[i].author, 0) + 1 
+               self.Tue[self.commits[i].author] = self.Tue.get(self.commits[i].author, 0) + 1 
             elif self.commits[i].dayOfTheWeek == 'Wed':
-                totalWed = totalWed + 1
                 self.Wed[self.commits[i].author] = self.Wed.get(self.commits[i].author, 0) + 1    
             elif self.commits[i].dayOfTheWeek == 'Thu':
-                totalThu = totalThu + 1
                 self.Thu[self.commits[i].author] = self.Thu.get(self.commits[i].author, 0) + 1 
             elif self.commits[i].dayOfTheWeek == 'Fri':
-                totalFri = totalFri + 1
                 self.Fri[self.commits[i].author] = self.Fri.get(self.commits[i].author, 0) + 1 
-        totalByDay =  totalMon + totalTue + totalWed + totalThu + totalFri  #sanity check
         
-        print 'total commits by day', totalByDay
         
     def month_per_author(self):
         #Statistic 4 Count number of commits by author and day of the week
-        totalByMonth = 0
-        totalJul = 0
-        totalAug = 0
-        totalSep = 0
-        totalOct = 0
-        totalNov = 0
         # iterate through commits to find Jul, Aug etc
         for i in range(len(self.commits)):
             if self.commits[i].month == 'Jul':
-                totalJul = totalJul + 1
                 self.Jul[self.commits[i].author] = self.Jul.get(self.commits[i].author, 0) + 1 
             elif self.commits[i].month == 'Aug':
-                totalAug = totalAug + 1
                 self.Aug[self.commits[i].author] = self.Aug.get(self.commits[i].author, 0) + 1 
             elif self.commits[i].month == 'Sep':
-                totalSep = totalSep + 1
                 self.Sep[self.commits[i].author] = self.Sep.get(self.commits[i].author, 0) + 1    
             elif self.commits[i].month == 'Oct':
-                totalOct = totalOct + 1
                 self.Oct[self.commits[i].author] = self.Oct.get(self.commits[i].author, 0) + 1 
             elif self.commits[i].month == 'Nov':
-                totalNov = totalNov + 1
                 self.Nov[self.commits[i].author] = self.Nov.get(self.commits[i].author, 0) + 1 
-        totalByMonth =  totalJul + totalAug + totalSep + totalOct + totalNov  #sanity check
-        
-        print 'total commits by month', totalByMonth 
-
-
- 
+       
         
         
-
 
 

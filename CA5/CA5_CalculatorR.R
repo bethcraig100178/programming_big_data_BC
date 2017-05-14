@@ -1,103 +1,91 @@
+#Beth Craig
+#Student Number 10331736
 
+#CA5 Part a
+
+#####################################################################
+
+#                 10 functions
+
+######################################################################
 
 #Add
-add <- function(){
-  x <- as.numeric(readline(prompt = "enter first number"))
-  y <-as.numeric(readline(prompt = "enter second number"))
-  result <- x+y
-  print(result)
-  return (result)
+add <- function(x, y){
+  result <- x + y
+  return(result)
   
   }
   
 
 #Subtract
-subtract <- function(){
-  x <- as.numeric(readline(prompt = "enter first number"))
-  y <-as.numeric(readline(prompt = "enter second number"))
+subtract <- function(x, y){
   result <- x-y
-  print(result)
+ 
   return (result)
   
   }
 
 #Multiply
-multiply <- function(){
-  x <- as.numeric(readline(prompt = "enter first number"))
-  y <-as.numeric(readline(prompt = "enter second number"))
+multiply <- function(x, y){
   result <- x*y
-  print(result)
+  
   return (result)
   }
 
 #Divide first by second
-divide <- function(){
-  x <- as.numeric(readline(prompt = "enter first number"))
-  y <-as.numeric(readline(prompt = "enter second number"))
-  if (y == 0) {
+divide <- function(x, y){
+    if (y == 0) {
     result = 'invalid'
   } else {
     result = x/y
-    print(result)
     return (result)}
   }
 
 #X to the power of Y
-xToPowerY <- function() {
-  x <- as.numeric(readline(prompt = "enter first number"))
-  y <-as.numeric(readline(prompt = "enter second number"))
-  print(x^y)
+xToPowerY <- function(x, y) {
+
   return (x^y)
   }
 
 #Squre
-square <- function(){
-  x <- as.numeric(readline(prompt = "enter the number"))
+square <- function(x){
   result = x*x
-  print(result)
   return(result)
   }
 
 #Cube
-cube <- function(){
-  x <- as.numeric(readline(prompt = "enter the number"))
+cube <- function(x){
   result = x*x*x
-  print(result)
   return(result)
 }
 
 #Inverse
-inverse <- function(){
-  x <- as.numeric(readline(prompt = "enter the number"))
-  if (x ==0) {
+inverse <- function(x){
+   if (x ==0) {
     result = 'undefined'
   } else {
     result <-1/x
   }
-  print(resut)
-  return (result)
+   return (result)
 }
 #note if 0 entered R gives Inf as answer so, unlike Python,
-#guarding against 0 is strictly required 
+#guarding against 0 is not strictly required 
 
 #Factorial
 
-factorial_BC <-function(){
-  x <- as.numeric(readline(prompt = "enter the number"))
-  if (x < 0 | x > 170) {
+factorial_BC <-function(x){
+    if (x < 0 | x > 170) {
     result <- 'invalid'
   } else if (x == 0) {
     result <- 1
   } else {
     result <- factorial(x)
   }
-  print(result)
-  return (result)
+   return (result)
 }
 
 #Convert to Degrees, Minutes, Seconds
-DMS = function() {
-  x <- as.numeric(readline(prompt = "enter angle"))
+DMS = function(x) {
   degrees <- x - (x%%1)
   minutes_float <- (x%%1)*60
   minutes <- minutes_float - (minutes_float%%1)
@@ -105,13 +93,13 @@ DMS = function() {
   print (paste(degrees, 'degrees', minutes, 'minutes', seconds, 'seconds'))
 }
 
+##############################################################################
+
+#                  Calls to proove functions work
+
+##############################################################################
 
 
-#Calls to proove functions work
-
-#Input is Numeric
-answer_input_numeric_6 <- input_is_numeric(6)
-answer_input_numeric_invalid <- input_is_numeric('hi')
 
 #Adding,Subtracting, Divinding, Multiplying
 answer_add_3 <- add(1,2)
@@ -157,22 +145,3 @@ answer_DMS_10_38_42 <-DMS(10.645)
 answer_DMS_negative_6_30_0<-DMS(-5.5)
 
 
-#User App
-
-print ("Menu\n1. Add\n 2. Subtract\n3. Multiply\n4. Divide\n5. x to the power of Y\n6. Square\n7. Cube\n8. Inverse\n9. Factorial\n10. DMS")
-
-proceed <- 'y'
-while (proceed == 'y'){
-  choice <- readline(prompt = "Enter your choice of function\n")
-  if (choice == 1){add()}
-  else if (choice == 2){subtract()}
-  else if (choice == 3){multiply()}
-  else if (choice == 4){divide()}
-  else if (choice == 5){xToPowerY()}
-  else if (choice == 6) {square()}
-  else if (choice == 7){cube()}
-  else if (choice == 8){inverse()}
-  else if (choice == 9){factorial_BC()}
-  else if (choice == 10){DMS()}
-  proceed <- readline(prompt = "enter y or n")
-}  

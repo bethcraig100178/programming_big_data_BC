@@ -7,7 +7,7 @@ class MyTest(unittest.TestCase):
         
     def testADD(self):
         myCalculator = Calculator()
-        self.assertEqual(myCalculator.add(2.5,2), 4.5) #test for same numbers
+        self.assertEqual(myCalculator.add(2.5,2.5), 5.0) #test for same numbers
         self.assertEqual(myCalculator.add(2, 3.5), 5.5) #test for two different numbers
         self.assertEqual(myCalculator.add(4,0), 4) #test for 0 
         self.assertEqual(myCalculator.add(-3, -2), -5) # test for adding minus numbers
@@ -49,7 +49,7 @@ class MyTest(unittest.TestCase):
         self.assertEqual(myCalculator.xtothepowerofy(0,2), 0) #test for x equal to 0
         self.assertEqual(myCalculator.xtothepowerofy(2,0), 1) #test for y equal to 0
         self.assertEqual(myCalculator.xtothepowerofy(-2, 3), -8) #test for negative x with positive y
-        self.assertEqual(myCalculator.xtothepowerofy(2, -3), 0.125) #test for positive x with negative yield
+        self.assertEqual(myCalculator.xtothepowerofy(2, -3), 0.125) #test for positive x with negative y
         self.assertEqual(myCalculator.xtothepowerofy(-2, -3), -0.125) # test for negative x and negative y
         
     def testSQUARE(self):
@@ -76,8 +76,8 @@ class MyTest(unittest.TestCase):
         
     def testFACTORIAL(self):
         myCalculator = Calculator()
-        self.assertEqual(myCalculator.factorial(70), 'invalid')
-        self.assertEqual(myCalculator.factorial(6), 720)
+        self.assertEqual(myCalculator.factorial(70), 'invalid')#test for 70
+        self.assertEqual(myCalculator.factorial(6), 720)#test for valid integer
         self.assertEqual(myCalculator.factorial(0), 1) #check 0! is 1
         
         

@@ -2,9 +2,7 @@ from calculator import Calculator
 import unittest
 
 class MyTest(unittest.TestCase):
-
-
-        
+       
     def testADD(self):
         myCalculator = Calculator()
         self.assertEqual(myCalculator.add(2.5,2.5), 5.0) #test for same numbers

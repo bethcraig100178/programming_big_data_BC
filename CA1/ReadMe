@@ -7,6 +7,6 @@ There are 3 files
 3. calculator_testCA.py is unit test code to check that everything functions as required
 
 
-Reviewing it now a year later, if I ever had the time I would 
+Reviewing it now a year later, if I ever had the time I would:
 (i) update the functions to avoid 'continue' and 'break' etc where possible
-(ii) refactor the code for  API_calculator code
+(ii) refactor the '#Body of Code to Operate the Calculator' code in the API_calculator.py into functions

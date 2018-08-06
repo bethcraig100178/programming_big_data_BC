@@ -1,0 +1,12 @@
+This was a project in my first year of my Higher Diploma in Data Analytics.
+The task was to create a calculator with 10 functions
+
+There are 3 files
+1. API_calculator.py contains all the code to obtain user in-put
+2. calculatorCA.py has the code to carry out the 10 functions
+3. calculator_testCA.py is unit test code to check that everything functions as required
+
+
+Reviewing it now a year later, if I ever had the time I would:
+(i) update the functions to avoid 'continue' and 'break' etc where possible
+(ii) refactor the '#Body of Code to Operate the Calculator' code in the API_calculator.py into functions

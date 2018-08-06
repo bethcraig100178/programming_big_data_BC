@@ -44,8 +44,6 @@ def getUserInputInt(str): #getuserinput and convert to an integer
         break
     return number
 
-
-
 #User defined functions
 
 #random functions
@@ -64,7 +62,7 @@ def userInstructions():
 
 #Body of Code to Operate the Calculator 
 
-myCalculator = Calculator() 
+myCalculator = Calculator() #create instance
 userInstructions() # print instructions to screen
 
 while True: # getting valid input
